@@ -21,14 +21,14 @@ import static org.springframework.security.config.Customizer.withDefaults;
 public class SecurityConfig {
 
     @Bean
-    public UserDetailsService userDetailsService(PasswordEncoder enconder){
+    public UserDetailsService userDetailsService(PasswordEncoder encoder){
         UserDetails admin = User.withUsername("john")
-                .password(enconder.encode("2033"))
+                .password(encoder.encode("2033"))
                 .roles("ADMIN","USER")
                 .build();
 
         UserDetails user = User.withUsername("Maria")
-                .password(enconder.encode("3344"))
+                .password(encoder.encode("3344"))
                 .roles("USER")
                 .build();
 

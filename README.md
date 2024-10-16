@@ -43,7 +43,7 @@ $ ./mvnw clean package
 ```
 - and then run it:
 ```bash
-$ java -jar target/basicauth-0.0.1-SNAPSHOT.jar
+$ java -jar target/basicAuth-0.0.1-SNAPSHOT.jar
 ```
 
 You can access the API here: [localhost:8080](http://localhost:8080).
